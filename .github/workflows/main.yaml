@@ -1,6 +1,9 @@
 name: compileTests
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   cTest:
