@@ -15,6 +15,7 @@ jobs:
         run: |
           javac -cp ".:Projects/P3/tests/junit-4.10.jar" Projects/P3/src/*.java
           javac -cp "Projects/P3/src/:.:Projects/P3/tests/junit-4.10.jar" Projects/P3/tests/*.java
+          cat Projects/P3/src/Ghost.java
   testGetLoc:
     runs-on: ubuntu-latest
     container: openjdk
