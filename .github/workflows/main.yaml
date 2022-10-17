@@ -26,7 +26,7 @@ jobs:
           javac -cp ".:Projects/P3/tests/junit-4.10.jar" Projects/P3/src/*.java
           javac -cp "Projects/P3/src/:.:Projects/P3/tests/junit-4.10.jar" Projects/P3/tests/*.java
           cd Projects/P3/
-          java -cp "src/:tests/:tests/junit-4.10.jar" org.junit.runner.JUnitCore TestMapGetLoc
+          java -Djava.awt.headless=true -cp "src/:tests/:tests/junit-4.10.jar" org.junit.runner.JUnitCore TestMapGetLoc
   testPacmanValidMoves:
     runs-on: ubuntu-latest
     container: openjdk
