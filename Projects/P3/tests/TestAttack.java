@@ -5,7 +5,13 @@ import junit.framework.*;
 public class TestAttack extends TestCase {
 
   public void testAttack() throws FileNotFoundException {
+	  System.out.println();
 	  System.out.println("yoo");
+	  
+	  assert false;
+	  
+	  System.out.println("yoo");
+	  
 	  NoFrame frame = new NoFrame();	    
 	  PacMan pacman = frame.addPacMan(new Location(1, 1));
 	  Ghost ghostInRange = frame.addGhost(new Location(1, 2), "GHOST", Color.RED);
